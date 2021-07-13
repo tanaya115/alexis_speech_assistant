@@ -56,7 +56,7 @@ def record_audio(ask=""):
         print(">>", voice_data.lower()) # print what user said
         return voice_data.lower()
 
-# get string and make a audio file to be played
+# get string and make a audio file to be played in the system
 def engine_speak(audio_string):
     audio_string = str(audio_string)
     tts = gTTS(text=audio_string, lang='en') # text to speech(voice)
